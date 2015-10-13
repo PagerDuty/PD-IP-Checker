@@ -5,6 +5,6 @@ Output will occur when an IP is added/removed or changed for the service you are
 - `check_events.sh` - Checks events.pagerduty.com for changed IP addressses.
 
 - `check_mailservers.sh` - Checks acme.pagerduty.com for changed MX record IP addressses.
-(Used when you utilize and email integrated service and need to whitelist outgoing traffic to PagerDuty)
+(Used when you utilize an email integrated service and need to whitelist outgoing traffic to PagerDuty)
 
 - `check_webhooks.sh` - Checks webhooks.pagerduty.com for changed IP addressses.

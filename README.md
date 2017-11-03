@@ -8,3 +8,5 @@ Output will occur when an IP is added/removed or changed for the service you are
 (Used when you utilize an email integrated service and need to whitelist outgoing traffic to PagerDuty)
 
 - `check_webhooks.sh` - Checks webhooks.pagerduty.com for changed IP addressses.
+
+- `check_webhooks_and_alert.sh` - Same as `check_webhooks.sh` but triggers a PagerDuty incident.

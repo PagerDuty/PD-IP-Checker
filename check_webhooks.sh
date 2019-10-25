@@ -6,7 +6,7 @@ if [ -f "webhooks_result.txt" ]; then
   mv webhooks_result.txt webhooks_result.txt.old
 fi
 
-dig +short webhooks.pagerduty.com | sort > webhooks_result.txt
+curl -s https://app.pagerduty.com/webhook_ips | tr -d \[\]\" | tr , '\n' | sort > webhooks_result.txt
 
 if [ -f "webhooks_result.txt.old" ]; then
   DIFF=$(diff -q 'webhooks_result.txt.old' 'webhooks_result.txt' > /dev/null)

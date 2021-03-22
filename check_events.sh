@@ -6,7 +6,7 @@ if [ -f "events_result.txt" ]; then
   mv events_result.txt events_result.txt.old
 fi
 
-dig +short events.pagerduty.com | sort > events_result.txt
+dig +short events.pagerduty.com events.gslb.pagerduty.com | sort > events_result.txt
 
 if [ -f "events_result.txt.old" ]; then
   DIFF=$(diff -q 'events_result.txt.old' 'events_result.txt' > /dev/null)

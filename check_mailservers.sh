@@ -18,7 +18,7 @@ if [ -f "mailservers_results.txt" ]; then
     # we overwrite the existing file with the changed IP addresses.
     echo ${mailservers_results_current} > mailservers_results.txt
     # display the output on stdout. MAILTO cron variable takes over the job of sending out an email.
-    echo -e "\nThe script has detected a change in PagerDuty's Events IP addresses. The new IP addresses are:\n\n${mailservers_results_current}"
+    echo -e "\nThe script has detected a change in PagerDuty Mailserver's IP addresses. The new IP addresses are:\n\n${mailservers_results_current}"
   fi
 else
   # we fall in this condition when we run the script for the first time

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# PagerDuty Status Page - https://status.pagerduty.com
+
 ## This script is designed to be run via a cron job with the MAILTO variable
 ## set to generate an email when output occurs (an IP is added/removed/changed)
 

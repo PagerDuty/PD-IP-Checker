@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ## This script is designed to be run via a cron job with the MAILTO variable set to generate an email when output occurs (an IP is added/removed/changed)
 

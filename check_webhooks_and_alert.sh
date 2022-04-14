@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Webhook delivery service IP address change notification script
 #
 # Same as check_webhooks.sh, but triggers a PagerDuty incident if there are changes.
